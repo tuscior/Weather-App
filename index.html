@@ -1,0 +1,32 @@
+        <head>
+          <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet"> 
+          
+          <link rel="stylesheet" href="style.css" >
+        </head>
+        <body>
+          <div class = "container-fluid">
+          <form id="form">
+          <input type="text" id='searchCity' name="search">
+          <input type="submit" name="submit">
+          </form>
+            <div class="wrapper">
+            <div class="weather">
+              <div class="title">
+              <span id = "loc"> Your location</span>
+              </div>             
+                <div class="rows"><span id = "temp">0</span>&deg;<span onclick="tempCF()" id="CF">C</span></div>
+                <div class="rows"><span id = "humidity">Rain</span>HPa</div>
+               <div class="rows"><span id = "icon"><img src= https://cdn1.iconfinder.com/data/icons/hawcons/32/700175-icon-1-cloud-128.png></img></span> 
+               </div>
+              </div>
+                
+               
+          <div id="map"> </div>
+          </div>
+          </div>
+          <script type="text/javascript" src="script.js"></script>
+          <script type="text/javascript" src="myscripts1.js"></script>
+          <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbczuMSCmXsQAznw3TE3_BZKEX8ybk2Ko&callback=getGeo">
+    </script>
+        </body> 
