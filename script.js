@@ -72,7 +72,7 @@
             weather.temp = data.main.temp;
             weather.humidity = data.main.pressure;
             weather.loc = data.name;
-            weather.icon = data.weather[0].icon;
+            //weather.icon = data.weather[0].icon;
             update(weather);
           }
         }; 
@@ -93,7 +93,7 @@ window.onload = function(){
 let temp = document.getElementById("temp").innerHTML;
 let loc = document.getElementById("loc").innerHTML;
 let humidity = document.getElementById("humidity").innerHTML;
-let icon = document.getElementById("icon").innerHTML;
+//let icon = document.getElementById("icon").innerHTML;
           
          
 $('#form').submit((event) => {
